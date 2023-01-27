@@ -3,7 +3,7 @@ import functions
 import time
 
 now = time.strftime("%b %d, %Y %H:%M:%S")
-print(now)
+print("Date and Time:", now)
 while True:
     # Get and format user input to guarantee if statements
     user_action = input("Type Add, Show, Edit, Complete or Exit: ")
