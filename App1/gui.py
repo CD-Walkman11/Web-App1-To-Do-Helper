@@ -1,10 +1,29 @@
-import functions
+import functions as fnc
 import PySimpleGUI as sg
 
 label = sg.Text("Enter a To-Do")
-input_box = sg.InputText(tooltip="Enter To-Do")
+input_box = sg.InputText(tooltip="Enter To-Do", key='todo')
 add_button = sg.Button('Add')
 
-window = sg.Window('My To-Do Helper', layout=[[label, input_box, add_button]])
-window.read()
+window = sg.Window('My To-Do Helper',
+                   layout=[[label, input_box, add_button]],
+                   font=('Helvetica', 12))
+
+while True:
+    event, values = window.read()
+    print(event)
+    print(values)
+    match event:
+        case 'Add':
+            todos = fnc.get_todos()
+            new_todo = values['todo'] + '\n'
+            todos.append(new_todo)
+            fnc.write_todos(todos)
+        case 'Edit':
+            todos = fnc.get_todos()
+
+        case sg.WIN_CLOSED:
+            break
+
+
 window.close()

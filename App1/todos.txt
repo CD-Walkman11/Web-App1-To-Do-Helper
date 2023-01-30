@@ -10,3 +10,6 @@ Cook Dinner
 Clean Dishes
 Wash Car
 Write Speech
+Make Lunch
+Study
+Write Introduction
