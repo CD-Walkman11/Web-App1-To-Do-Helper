@@ -12,4 +12,6 @@ Wash Car
 Write Speech
 Make Lunch
 Study
-Draft IntroductionClean Office
+Clean Office
+Outline Speech
+Do Research
