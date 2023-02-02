@@ -10,7 +10,7 @@ def add_todo():
     functions.write_todos(todos)
 
 
-st.title("To-Do List Helper")
+st.title("To-Do List Organizer")
 st.subheader("A Productivity List Creator")
 st.write("What would you like to do today?")
 
