@@ -1,5 +1,4 @@
 Dust Office
-Sweep
 Buy Groceries
 Go to Bank
 Check Mailbox
@@ -7,7 +6,5 @@ Dust Computer
 Cook Dinner
 Clean Dishes
 Wash Car
-Write Speech
 Clean Office
-Outline Speech
-Do Research
+Conduct ResearchOutline Speech
