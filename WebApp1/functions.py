@@ -16,7 +16,6 @@ def write_todos(todos_arg, file_path=FILEPATH):
         file_local.writelines(todos_arg)
 
 
-# Check if this is the main file
 if __name__ == '__main__':
     print('Welcome')
     print(get_todos())
