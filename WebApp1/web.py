@@ -1,13 +1,13 @@
 import streamlit as st
-import functions as fnc
+import functions
 
-todos = fnc.get_todos()
+todos = functions.get_todos()
 
 
 def add_todo():
     new_todo = st.session_state['new_todo'] + '\n'
     todos.append(new_todo)
-    fnc.write_todos(todos)
+    functions.write_todos(todos)
 
 
 st.title("To-Do List Helper")
@@ -18,7 +18,7 @@ for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
     if checkbox:
         todos.pop(index)
-        fnc.write_todos(todos)
+        functions.write_todos(todos)
         del st.session_state[todo]
         st.experimental_rerun()
 
